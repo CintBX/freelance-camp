@@ -3,18 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod",
-    "start": "ng serve"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~7.3.8",
-    "@angular/compiler-cli": "~7.2.0",
     "@angular/animations": "~7.2.0",
+    "@angular/cli": "~7.3.8",
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
     "@angular/core": "~7.2.0",
@@ -29,11 +28,12 @@
     "rxjs": "~6.3.3",
     "rxjs-compat": "6.3.3",
     "tslib": "^1.9.0",
-    "zone.js": "~0.8.26",
-    "typescript": "~3.2.2"
+    "typescript": "~3.2.2",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
+    "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
     "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
