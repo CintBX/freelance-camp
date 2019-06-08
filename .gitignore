@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 # Node Modules
-# /node_modules
+/node_modules
