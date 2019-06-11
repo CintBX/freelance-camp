@@ -6,7 +6,7 @@ import { Document } from './document';
 
 @Injectable()
 export class DocumentService {
-	private documentsUrl = 'https://cintron-freelance.herokuapp.com/documents';
+	private documentsUrl = 'https://cintron-freelance-documents.herokuapp.com/';
 
 	constructor(
 		private http: Http

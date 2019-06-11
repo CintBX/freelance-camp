@@ -6,7 +6,7 @@ import { Proposal } from './proposal';
 
 @Injectable()
 export class ProposalService {
-	private proposalsUrl = 'https://cintron-freelance.herokuapp.com/proposals';
+	private proposalsUrl = 'https://cintron-freelance-proposals.herokuapp.com/';
 
 	constructor(
 		private http: Http
