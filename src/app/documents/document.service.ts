@@ -6,14 +6,14 @@ import { Document } from './document';
 
 @Injectable()
 export class DocumentService {
-	private documentsUrl = 'http://localhost:3001/freelance_documents';
+	private documentsUrl = 'https://cintron-freelance-documents.herokuapp.com/';
 
 	constructor(
-		private http: Http
+		private https: Http
 	) {}
 
 	getDocuments(): Observable<Document[]> {
-		return this.http.get(this.documentsUrl)
+		return this.https.get(this.documentsUrl)
 										.map((response: Response) => <Document[]>response.json())
 										.catch(this.handleError);
 	}
